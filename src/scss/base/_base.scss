@@ -1,0 +1,18 @@
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: $ff-sans-serif;
+}
+
+body {
+  background-color: $colors--pale-grey;
+  color: $colors--navy;
+  font-size: 1.4rem;
+}
+
+figure {
+  margin-bottom: 0;
+}

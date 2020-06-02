@@ -1,0 +1,54 @@
+.form-control {
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 1.5rem;
+  height: auto;
+  border-color: $colors--pinkish-grey;
+
+  &:focus {
+    border-color: $colors--navy;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $colors--warm-grey;
+  }
+}
+
+input {
+  &[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+
+    + label {
+      position: relative;
+      padding-left: 3rem;
+      font-size: 1.2rem;
+      color: $colors--warm-grey;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $colors--pinkish-grey;
+        margin-right: 1rem;
+      }
+    }
+
+    &:checked {
+      + label {
+        &::before {
+          content: "\f00c";
+          font-family: $font-awesome;
+          font-weight: 300;
+          color: $colors--pinkish-grey;
+          padding-left: 0.25rem;
+        }
+      }
+    }
+  }
+}
