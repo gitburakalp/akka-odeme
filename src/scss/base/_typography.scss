@@ -65,6 +65,11 @@
     font-size: 3.6rem;
     letter-spacing: -0.18rem;
   }
+
+  &-65 {
+    font-size: 6.5rem;
+    letter-spacing: -0.325rem;
+  }
 }
 
 .text {
@@ -98,5 +103,13 @@
 .font-weight {
   &-thin {
     font-weight: 300 !important;
+  }
+}
+
+.font {
+  &-family {
+    &-serif {
+      font-family: $ff-serif;
+    }
   }
 }

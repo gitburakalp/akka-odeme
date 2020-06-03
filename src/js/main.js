@@ -5,6 +5,18 @@ document.addEventListener("DOMContentLoaded", function () {
     $(this).siblings().toggleClass("is-shown");
   });
 
+  $(".login-text a").on("click", function (e) {
+    e.preventDefault();
+
+    $(".hero-section").addClass("type-login");
+  });
+
+  $(".dismiss-btn").on("click", function (e) {
+    e.preventDefault();
+
+    $(".hero-section").removeClass("type-login");
+  });
+
   $("html,body").on("click", function (e) {
     var $target = $(e.target);
 

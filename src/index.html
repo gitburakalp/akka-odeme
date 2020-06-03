@@ -55,7 +55,7 @@
     <main class="main">
         <section class="hero-section">
             <figure class="image">
-                <img src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/3ECD308B-9A80-4283-8760-26E8854260CC.png"
+                <img src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/E713728A-074C-41BD-A725-7C2E8E4033BF.png"
                     alt="" />
             </figure>
             <div class="container">
@@ -85,6 +85,11 @@
                             <a class="title f-18 mt-2">
                                 Şartlar ve Koşullar
                             </a>
+                            <h4 class="title f-65 login-title mb-5">
+                                AKKA Güvenli<br>
+                                Elektonik Ödeme Sistemine<br>
+                                <span class="font-weight-light">Hoşgeldiniz</span>
+                            </h4>
                             <div class="mini-menu-block mt-auto">
                                 <h6 class="title-serif font-weight-normal f-20 text-center">Akka Hotels & Resorts</h6>
                                 <ul class="mini-menu mt-4">
@@ -134,51 +139,101 @@
                     </div>
                     <div class="col-12 col-lg-auto mt-md-4 mt-lg-0 ml-lg-auto">
                         <div class="special-box">
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <h2 class="title-serif text-color-khaki text-center f-24">
-                                        Hesabınızı Oluşturun
-                                    </h2>
+                            <form id="loginForm" class="login-form">
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <h2 class="title-serif text-color-khaki text-center f-24">
+                                            Giriş Yapın
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <input class="form-control" placeholder="İsim">
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input class="form-control" placeholder="İsim">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <input class="form-control" placeholder="Soyisim">
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input class="form-control" placeholder="Soyisim">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <input class="form-control" placeholder="E-Posta">
+                                <div class="form-row mt-5">
+                                    <div class="col-6 mx-auto">
+                                        <a href="#!" class="d-block btn btn--navy">GİRİŞ</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <input class="form-control" placeholder="Telefon Numaranız">
+                                <div class="form-row mt-5">
+                                    <div class="col-12">
+                                        <ul class="account-list">
+                                            <li>
+                                                <a class="link dismiss-btn">
+                                                    Üye Olmak İstiyorum
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="link">
+                                                    Şifremi Unuttum?
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <input class="form-control" placeholder="Şifreniz">
+                                <div class="form-row mt-5">
+                                    <div class="col-12">
+                                        <p class="description font-family-serif text-color-khaki f-16 text-center">
+                                            Members who register for the bonus page will be deemed to have accepted all
+                                            the terms and conditions contained in the main home page.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row mt-5">
-                                <div class="col-12">
-                                    <input type="checkbox" id="chkKvkk">
-                                    <label for="chkKvkk">KVKK Aydınlatma Metni’ni okuduğunuzu kabul etmelisiniz. <span
-                                            class="text-color-azul font-weight-bold text-underline">KVKK
-                                            Aydınlatma Okumak İçin tıklayınız</span></label>
+                            </form>
+                            <form id="signupForm" class="sign-up-form">
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <h2 class="title-serif text-color-khaki text-center f-24">
+                                            Hesabınızı Oluşturun
+                                        </h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row mt-5">
-                                <div class="col-6 mx-auto">
-                                    <a href="#!" class="d-block btn btn--navy">KAYIT</a>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input class="form-control" placeholder="İsim">
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input class="form-control" placeholder="Soyisim">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input class="form-control" placeholder="E-Posta">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input class="form-control" placeholder="Telefon Numaranız">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input class="form-control" placeholder="Şifreniz">
+                                    </div>
+                                </div>
+                                <div class="form-row mt-5">
+                                    <div class="col-12">
+                                        <input type="checkbox" id="chkKvkk">
+                                        <label for="chkKvkk">KVKK Aydınlatma Metni’ni okuduğunuzu kabul etmelisiniz.
+                                            <span class="text-color-azul font-weight-bold text-underline">KVKK
+                                                Aydınlatma Okumak İçin tıklayınız</span></label>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-5">
+                                    <div class="col-6 mx-auto">
+                                        <a href="#!" class="d-block btn btn--navy">KAYIT</a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
