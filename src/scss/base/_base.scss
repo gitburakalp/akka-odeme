@@ -4,17 +4,35 @@ html {
   @include media-breakpoint-only(lg) {
     font-size: 45%;
   }
+
+  @media (min-width: 1280px) and (max-width: 1600px) {
+    font-size: 50%;
+  }
 }
 
 html,
 body {
   font-family: $ff-sans-serif;
+
+  @include media-breakpoint-down(sm) {
+    overflow-x: hidden !important;
+  }
 }
 
 body {
   background-color: $colors--pale-grey;
   color: $colors--navy;
   font-size: 1.4rem;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: vw(72, 375);
+  }
+}
+
+@for $i from 1 to 6 {
+  h#{$i} {
+    margin-bottom: 0;
+  }
 }
 
 figure {
@@ -25,6 +43,7 @@ a {
   color: inherit;
   transition: color $duration, background-color $duration,
     border-color $duration;
+  cursor: pointer;
 
   &:hover {
     color: inherit;

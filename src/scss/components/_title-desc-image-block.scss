@@ -1,7 +1,29 @@
 .title-desc-image-block {
   position: relative;
 
+  .row {
+    > * {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
   .title-desc-block {
+    @include media-breakpoint-down(sm) {
+      .title {
+        text-align: center;
+        max-width: 75%;
+        margin: 0 auto;
+      }
+
+      .description {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+
     @include media-breakpoint-up(md) {
       $width: calcPercent(991, 1640) * 1%;
       flex: 0 0 $width;

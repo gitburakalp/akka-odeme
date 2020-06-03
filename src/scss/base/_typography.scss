@@ -1,4 +1,6 @@
 .title {
+  font-size: 1.4rem;
+  letter-spacing: 0.035rem;
   font-weight: bold;
   line-height: 1.19;
   color: $colors--white;
@@ -86,5 +88,15 @@
 
   &-underline {
     text-decoration: underline !important;
+  }
+}
+
+.ls--08 {
+  letter-spacing: -0.08rem;
+}
+
+.font-weight {
+  &-thin {
+    font-weight: 300 !important;
   }
 }

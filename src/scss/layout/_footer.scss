@@ -1,0 +1,147 @@
+.footer {
+  background-image: url("https://cdn.akkahotels.com/Storage/svg/footer-path.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+  margin-top: vw(75, 375);
+  padding-top: vw(100, 375);
+  padding-bottom: vw(54, 375);
+  color: $colors--dull-brown;
+
+  @include media-breakpoint-up(md) {
+    margin-top: vw(90, 1920);
+    padding-top: vw(310, 1920);
+    padding-bottom: vw(75, 1920);
+  }
+
+  &-block {
+    position: relative;
+    padding: 4rem;
+    background-color: $colors--white;
+
+    @include media-breakpoint-up(md) {
+      padding: vw(110, 1920);
+      padding-bottom: vw(40, 1920);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 2rem;
+      top: 2rem;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 0;
+      border: 1px solid $colors--dark-khaki;
+
+      @include media-breakpoint-up(md) {
+        border-color: #e0dfdf;
+      }
+    }
+  }
+
+  &-list {
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &-block {
+      @include media-breakpoint-up(lg) {
+        display: flex;
+        flex-flow: wrap;
+
+        > * {
+          position: relative;
+          min-height: 1px;
+          width: 50%;
+        }
+      }
+    }
+
+    &-item {
+      position: relative;
+
+      @include media-breakpoint-down(sm) {
+        + * {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-link {
+      display: block;
+      font-family: $ff-serif;
+      font-size: 2rem;
+      letter-spacing: 0.05rem;
+      font-weight: 400;
+      color: inherit;
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        text-align: left;
+
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .find-us {
+    position: relative;
+    text-align: center;
+
+    .title {
+      font-size: 2rem;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .description {
+      font-weight: 300;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2.2rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding-right: vw((226+124), 1920);
+
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: vw(226, 1920);
+          height: vw(226, 1920);
+          background-image: url("https://cdn.akkahotels.com/Storage/header-icon-scrolled.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          opacity: 0.05;
+          max-width: 226px;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  .copyright {
+    position: relative;
+    font-size: 1.2rem;
+    color: $colors--navy;
+    font-weight: 300;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
+    }
+  }
+}
