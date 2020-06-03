@@ -1,0 +1,107 @@
+.brands-section {
+  position: relative;
+
+  .mastercard {
+    $width: calcPercent(105, 375) * 1%;
+    flex: 0 0 $width;
+    max-width: $width;
+
+    @include media-breakpoint-down(md) {
+      margin-left: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+      $width: calcPercent(105, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+
+  .visa {
+    $width: calcPercent(105, 375) * 1%;
+    flex: 0 0 $width;
+    max-width: $width;
+
+    @include media-breakpoint-down(md) {
+      margin-right: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+      $width: calcPercent(105, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+
+  .garanti {
+    $width: calcPercent(267, 375) * 1%;
+    flex: 0 0 $width;
+    max-width: $width;
+
+    @include media-breakpoint-down(md) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3.4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      $width: calcPercent(258, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+
+  .yapi-kredi {
+    $width: calcPercent(209, 375) * 1%;
+    flex: 0 0 $width;
+    max-width: $width;
+
+    @include media-breakpoint-down(md) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3.4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      $width: calcPercent(202, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+
+  .akbank {
+    $width: calcPercent(213, 375) * 1%;
+    flex: 0 0 $width;
+    max-width: $width;
+
+    @include media-breakpoint-down(md) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3.4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      $width: calcPercent(204, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+
+  .turkiye-is-bankasi {
+    $width: calcPercent(249, 375) * 1%;
+    flex: 0 0 $width;
+    max-width: $width;
+
+    @include media-breakpoint-down(md) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3.4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      $width: calcPercent(244, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}

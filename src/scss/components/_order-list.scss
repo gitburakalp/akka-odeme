@@ -1,0 +1,44 @@
+.order-list {
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  counter-reset: orderList;
+
+  > * {
+    position: relative;
+    display: block;
+  }
+
+  &--circle {
+    @extend .order-list;
+
+    .order-list-item {
+      padding-left: 3.8rem;
+      line-height: 2;
+
+      + * {
+        margin-top: 0.7rem;
+      }
+
+      &::before {
+        counter-increment: orderList;
+        content: counter(orderList);
+        position: absolute;
+        left: 0;
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color: $colors--white;
+        border-radius: 50%;
+        color: $colors--black;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

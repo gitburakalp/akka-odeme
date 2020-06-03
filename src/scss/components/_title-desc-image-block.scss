@@ -1,0 +1,42 @@
+.title-desc-image-block {
+  position: relative;
+
+  .title-desc-block {
+    @include media-breakpoint-up(md) {
+      $width: calcPercent(991, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+
+    [class*="title"] {
+      + * {
+        margin-top: 26px;
+
+        @include media-breakpoint-up(md) {
+          margin-top: vw(26, 1920);
+        }
+      }
+    }
+
+    .description {
+      line-height: 1.67;
+    }
+  }
+
+  .image-block {
+    .image {
+      border-radius: 1rem;
+      padding-bottom: 207 / 345 * 100%;
+
+      @include media-breakpoint-up(md) {
+        padding-bottom: 207 / 511 * 100%;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      $width: calcPercent(511, 1640) * 1%;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}

@@ -3,10 +3,12 @@
 
   display: flex;
   flex-direction: column;
+  color: $colors--white;
 
   @include media-breakpoint-up(md) {
     min-height: vw(720, 1920);
     justify-content: flex-end;
+    padding-top: vw(36, 1920);
     padding-bottom: vw(36, 1920);
 
     &::before {
@@ -31,6 +33,24 @@
       right: 0;
       bottom: 0;
       top: 0;
+      z-index: -1;
+    }
+  }
+
+  .left-side {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: vw(122, 1920);
     }
   }
 
@@ -40,6 +60,12 @@
     border-radius: 1rem;
     z-index: 2;
     padding: 4rem;
+
+    @include media-breakpoint-down(sm) {
+      border-radius: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
 
     > .form-row {
       + .form-row {

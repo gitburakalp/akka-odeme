@@ -1,0 +1,53 @@
+.mini-menu {
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  display: inline-flex;
+  flex-flow: nowrap;
+
+  > * {
+    position: relative;
+    min-height: 1px;
+    width: auto;
+
+    + * {
+      padding-left: 2rem;
+      margin-left: 2rem;
+    }
+  }
+
+  &-item {
+    + * {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        bottom: 0;
+        background-color: $colors--black;
+      }
+    }
+  }
+
+  &-link {
+    text-align: center;
+    display: block;
+
+    font-family: $ff-serif;
+    color: $colors--black;
+    font-size: 2.2rem;
+
+    span {
+      font-size: 1.2rem;
+      line-height: 1;
+      display: block;
+    }
+  }
+
+  &-block {
+    position: relative;
+  }
+}

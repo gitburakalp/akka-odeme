@@ -1,0 +1,17 @@
+.btn {
+  font-size: 1.4rem;
+  border-radius: 3rem;
+  line-height: 1;
+  padding: 1.5rem;
+
+  &--navy {
+    background-color: $colors--navy;
+    color: $colors--white;
+
+    &:hover {
+      background-color: $colors--white;
+      color: $colors--navy;
+      border-color: $colors--navy;
+    }
+  }
+}
