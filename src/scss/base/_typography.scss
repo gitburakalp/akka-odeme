@@ -21,6 +21,23 @@
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.37;
+
+  &-list {
+    padding-left: 2rem;
+
+    li {
+      font-family: $ff-sans-serif;
+      font-weight: 300;
+      font-size: 1.4rem;
+      line-height: 1.37;
+    }
+  }
+}
+
+.main-title {
+  + * {
+    margin-top: 3.8rem !important;
+  }
 }
 
 .f {

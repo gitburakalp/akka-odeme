@@ -1,0 +1,17 @@
+.static-wrapper {
+  position: relative;
+
+  * {
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+
+  [class*="col"] {
+    > * {
+      + * {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

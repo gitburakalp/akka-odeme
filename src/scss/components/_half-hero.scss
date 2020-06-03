@@ -1,0 +1,23 @@
+.half-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: vw(200, 375);
+
+  @include media-breakpoint-up(md) {
+    min-height: vw(400, 1920);
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border: none;
+    transition: all 300ms 150ms ease-in;
+  }
+}
