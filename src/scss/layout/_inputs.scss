@@ -4,6 +4,7 @@
   padding: 1.5rem;
   height: auto;
   border-color: $colors--pinkish-grey;
+  border-radius: 0;
 
   &:focus {
     border-color: $colors--navy;
@@ -14,6 +15,22 @@
   &::placeholder {
     color: $colors--warm-grey;
   }
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  line-height: 1.25;
+
+  background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fal' data-icon='angle-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' class='svg-inline--fa fa-angle-down fa-w-8 fa-fw fa-2x'%3E%3Cpath fill='currentColor' d='M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z' class=''%3E%3C/path%3E%3C/svg%3E");
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 1rem);
 }
 
 input {
@@ -36,6 +53,7 @@ input {
         height: 2rem;
         border: 1px solid $colors--pinkish-grey;
         margin-right: 1rem;
+        background-color: $colors--white;
       }
     }
 

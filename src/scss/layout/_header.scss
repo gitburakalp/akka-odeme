@@ -14,6 +14,13 @@
   @include media-breakpoint-down(md) {
     padding-bottom: 1.6rem;
 
+    .user-block {
+      order: 999;
+
+      text-align: center;
+      margin-top: 1rem;
+    }
+
     .support-column {
       display: block;
       position: fixed;

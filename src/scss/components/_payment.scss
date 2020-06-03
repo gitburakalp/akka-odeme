@@ -1,0 +1,17 @@
+.payment {
+  &-block {
+    .row {
+      + .row {
+        margin-top: 2rem;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      [class*="col-12"] {
+        + [class*="col-12"] {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

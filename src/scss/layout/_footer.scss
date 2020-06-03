@@ -51,11 +51,12 @@
       @include media-breakpoint-up(lg) {
         display: flex;
         flex-flow: wrap;
+        justify-content: space-between;
 
         > * {
           position: relative;
           min-height: 1px;
-          width: 50%;
+          width: 48%;
         }
       }
     }

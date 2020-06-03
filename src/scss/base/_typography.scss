@@ -41,50 +41,54 @@
 }
 
 .f {
+  &-14 {
+    font-size: 1.4rem !important;
+  }
+
   &-15 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   &-16 {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
   }
 
   &-18 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
     letter-spacing: 0.045rem;
   }
 
   &-20 {
-    font-size: 2rem;
+    font-size: 2rem !important;
     letter-spacing: 0.05rem;
   }
 
   &-22 {
-    font-size: 2.2rem;
+    font-size: 2.2rem !important;
     letter-spacing: 0.055rem;
   }
 
   &-24 {
-    font-size: 2.4rem;
+    font-size: 2.4rem !important;
     letter-spacing: 0.06rem;
   }
 
   &-26 {
-    font-size: 2.6rem;
+    font-size: 2.6rem !important;
   }
 
   &-30 {
-    font-size: 3rem;
+    font-size: 3rem !important;
     letter-spacing: 0.075rem;
   }
 
   &-36 {
-    font-size: 3.6rem;
+    font-size: 3.6rem !important;
     letter-spacing: -0.18rem;
   }
 
   &-65 {
-    font-size: 6.5rem;
+    font-size: 6.5rem !important;
     letter-spacing: -0.325rem;
   }
 }
@@ -105,6 +109,10 @@
 
     &-khaki {
       color: $colors--dark-khaki !important;
+    }
+
+    &-warm-grey {
+      color: $colors--warm-grey !important;
     }
   }
 
