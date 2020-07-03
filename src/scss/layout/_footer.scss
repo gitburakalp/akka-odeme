@@ -1,17 +1,10 @@
 .footer {
-  background-image: url("https://cdn.akkahotels.com/Storage/svg/footer-path.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-
   margin-top: vw(75, 375);
-  padding-top: vw(100, 375);
   padding-bottom: vw(54, 375);
   color: $colors--dull-brown;
 
   @include media-breakpoint-up(md) {
     margin-top: vw(90, 1920);
-    padding-top: vw(310, 1920);
     padding-bottom: vw(75, 1920);
   }
 

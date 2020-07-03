@@ -4,16 +4,24 @@
   left: 0;
   width: 100%;
   z-index: 9;
-  color: $colors--white;
-  padding-top: 1.6rem;
+  color: $colors--dull-brown;
+  background-color: $colors--white;
 
-  @include media-breakpoint-down(sm) {
-    background-color: $colors--white;
+  padding: 14px 20px;
+
+  @include media-breakpoint-up(md) {
+    padding: 2.73438vw 2.92969vw;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 1.5vw 1.5625vw;
+  }
+
+  @include media-breakpoint-up(huge) {
+    padding: 1.5vw 30px;
   }
 
   @include media-breakpoint-down(md) {
-    padding-bottom: 1.6rem;
-
     .user-block {
       order: 999;
 
@@ -38,37 +46,19 @@
     }
   }
 
-  @include media-breakpoint-up(md) {
-    position: absolute;
-  }
-
-  @include media-breakpoint-up(lg) {
-    padding-top: 6rem;
-  }
-
   .brand {
     position: relative;
     display: inline-block;
-
-    $width: vw(50, 345);
-    width: $width;
 
     @include media-breakpoint-down(md) {
       margin-left: 1.5rem;
     }
 
-    @include media-breakpoint-up(md) {
-      $width: vw(93, 768);
-      width: $width;
-    }
-
     @include media-breakpoint-up(lg) {
       position: absolute;
 
-      $width: vw(93, 1920);
       left: 50%;
       transform: translateX(-50%);
-      width: $width;
     }
 
     &-img {
@@ -76,6 +66,20 @@
       max-width: 100%;
       height: auto;
       vertical-align: middle;
+
+      max-height: 44px;
+
+      @include media-breakpoint-up(md) {
+        max-height: 5.10417vw;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-height: 6.73828vw;
+      }
+
+      @include media-breakpoint-up(huge) {
+        max-height: 98px;
+      }
     }
   }
 
@@ -85,10 +89,14 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='37' viewBox='0 0 37 37'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Group_5238' data-name='Group 5238' transform='translate(-1 -1)'%3E%3Cpath id='Path_8023' data-name='Path 8023' class='cls-1' d='M36.21,1H21.887A1.793,1.793,0,0,0,20.1,2.79V3.3A8.937,8.937,0,0,0,5.177,9.952v1.79H5.2A2.955,2.955,0,0,0,5.177,16.5v1.806a1.793,1.793,0,0,0,1.79,1.79H8.289a6.609,6.609,0,0,0,1.663,2.076v1.046L4.1,24.779A4.183,4.183,0,0,0,1,28.816V38H27.258V28.816a4.183,4.183,0,0,0-3.1-4.037l-5.851-1.56V22.173a6.554,6.554,0,0,0,2.387-5.06h.6a2.975,2.975,0,0,0,1.772-5.371h5.389v4.177l5.57-4.177H36.21A1.793,1.793,0,0,0,38,9.952V2.79A1.793,1.793,0,0,0,36.21,1ZM6.371,9.952a7.758,7.758,0,1,1,15.516,0v1.254a2.981,2.981,0,0,0-.6-.06H20.1A6.564,6.564,0,0,1,15.425,9.21l-1.3-1.3-1.3,1.3a6.564,6.564,0,0,1-4.672,1.935H6.968a2.981,2.981,0,0,0-.6.06Zm.6,2.387h.6v3.581h-.6a1.79,1.79,0,1,1,0-3.581Zm0,6.565a.6.6,0,0,1-.6-.6V17.053a2.981,2.981,0,0,0,.6.06h.6a6.544,6.544,0,0,0,.254,1.79Zm3.4,5.44,2.875,2.875-2.508,2.09-2.3-4.45Zm5.331,5-.747,1.494H13.3l-.747-1.494,1.571-1.31Zm-2.225,2.687h1.308l.477,4.774H13Zm-9.067-6.1,2.846-.759,3.105,6,1.256-1.047.71,1.419L11.8,36.806H6.968V30.242H5.774v2.984H2.194v-4.41A2.987,2.987,0,0,1,4.409,25.933ZM2.194,34.419H5.774v2.387H2.194Zm20.29,2.387V34.419h3.581v2.387Zm3.581-7.991v4.41H22.484V30.242H21.29v6.565H16.459l-.526-5.259.71-1.419L17.9,31.174l3.131-5.995,2.823.753A2.988,2.988,0,0,1,26.065,28.816Zm-6.22-3.951L17.523,29.31l-2.51-2.092,2.875-2.875ZM17.113,23.43l-2.984,2.984L11.145,23.43v-.477a6.507,6.507,0,0,0,5.968,0ZM19.5,17.113A5.369,5.369,0,0,1,9.666,20.1h1.589a1.788,1.788,0,0,0,1.681,1.194h2.387a1.79,1.79,0,1,0,0-3.581H12.936A1.788,1.788,0,0,0,11.256,18.9H9.072a5.318,5.318,0,0,1-.314-1.79v-4.8a7.74,7.74,0,0,0,4.919-2.262l.452-.452.452.452A7.74,7.74,0,0,0,19.5,12.316ZM12.339,19.5a.6.6,0,0,1,.6-.6h2.387a.6.6,0,0,1,0,1.194H12.935A.6.6,0,0,1,12.339,19.5Zm8.952-3.581h-.6V12.339h.6a1.79,1.79,0,1,1,0,3.581ZM36.806,9.952a.6.6,0,0,1-.6.6H33.624l-3.979,2.984V10.548H23.081v-.6A8.892,8.892,0,0,0,21.29,4.6V2.79a.6.6,0,0,1,.6-.6H36.21a.6.6,0,0,1,.6.6Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='37' viewBox='0 0 37 37'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %238b724a; %7D %3C/style%3E%3C/defs%3E%3Cg id='Group_5238' data-name='Group 5238' transform='translate(-1 -1)'%3E%3Cpath id='Path_8023' data-name='Path 8023' class='cls-1' d='M36.21,1H21.887A1.793,1.793,0,0,0,20.1,2.79V3.3A8.937,8.937,0,0,0,5.177,9.952v1.79H5.2A2.955,2.955,0,0,0,5.177,16.5v1.806a1.793,1.793,0,0,0,1.79,1.79H8.289a6.609,6.609,0,0,0,1.663,2.076v1.046L4.1,24.779A4.183,4.183,0,0,0,1,28.816V38H27.258V28.816a4.183,4.183,0,0,0-3.1-4.037l-5.851-1.56V22.173a6.554,6.554,0,0,0,2.387-5.06h.6a2.975,2.975,0,0,0,1.772-5.371h5.389v4.177l5.57-4.177H36.21A1.793,1.793,0,0,0,38,9.952V2.79A1.793,1.793,0,0,0,36.21,1ZM6.371,9.952a7.758,7.758,0,1,1,15.516,0v1.254a2.981,2.981,0,0,0-.6-.06H20.1A6.564,6.564,0,0,1,15.425,9.21l-1.3-1.3-1.3,1.3a6.564,6.564,0,0,1-4.672,1.935H6.968a2.981,2.981,0,0,0-.6.06Zm.6,2.387h.6v3.581h-.6a1.79,1.79,0,1,1,0-3.581Zm0,6.565a.6.6,0,0,1-.6-.6V17.053a2.981,2.981,0,0,0,.6.06h.6a6.544,6.544,0,0,0,.254,1.79Zm3.4,5.44,2.875,2.875-2.508,2.09-2.3-4.45Zm5.331,5-.747,1.494H13.3l-.747-1.494,1.571-1.31Zm-2.225,2.687h1.308l.477,4.774H13Zm-9.067-6.1,2.846-.759,3.105,6,1.256-1.047.71,1.419L11.8,36.806H6.968V30.242H5.774v2.984H2.194v-4.41A2.987,2.987,0,0,1,4.409,25.933ZM2.194,34.419H5.774v2.387H2.194Zm20.29,2.387V34.419h3.581v2.387Zm3.581-7.991v4.41H22.484V30.242H21.29v6.565H16.459l-.526-5.259.71-1.419L17.9,31.174l3.131-5.995,2.823.753A2.988,2.988,0,0,1,26.065,28.816Zm-6.22-3.951L17.523,29.31l-2.51-2.092,2.875-2.875ZM17.113,23.43l-2.984,2.984L11.145,23.43v-.477a6.507,6.507,0,0,0,5.968,0ZM19.5,17.113A5.369,5.369,0,0,1,9.666,20.1h1.589a1.788,1.788,0,0,0,1.681,1.194h2.387a1.79,1.79,0,1,0,0-3.581H12.936A1.788,1.788,0,0,0,11.256,18.9H9.072a5.318,5.318,0,0,1-.314-1.79v-4.8a7.74,7.74,0,0,0,4.919-2.262l.452-.452.452.452A7.74,7.74,0,0,0,19.5,12.316ZM12.339,19.5a.6.6,0,0,1,.6-.6h2.387a.6.6,0,0,1,0,1.194H12.935A.6.6,0,0,1,12.339,19.5Zm8.952-3.581h-.6V12.339h.6a1.79,1.79,0,1,1,0,3.581ZM36.806,9.952a.6.6,0,0,1-.6.6H33.624l-3.979,2.984V10.548H23.081v-.6A8.892,8.892,0,0,0,21.29,4.6V2.79a.6.6,0,0,1,.6-.6H36.21a.6.6,0,0,1,.6.6Z'/%3E%3C/g%3E%3C/svg%3E");
     background-position: left center;
     background-size: 3.7rem;
     background-repeat: no-repeat;
+
+    .title {
+      color: $colors--dark-khaki;
+    }
 
     @include media-breakpoint-down(md) {
       padding-top: 2rem;
@@ -103,6 +111,7 @@
       padding-right: 2.2rem;
       letter-spacing: 0.3rem;
       font-size: 1.8rem;
+      font-weight: bold;
 
       @include media-breakpoint-down(md) {
         color: $colors--black;
@@ -114,6 +123,10 @@
 
       @include media-breakpoint-up(md) {
         font-size: 2rem;
+
+        display: flex;
+        align-items: center;
+        height: 65px;
       }
 
       &:after {
@@ -122,7 +135,7 @@
         top: 50%;
         transform: translateY(-50%);
         font-family: $font-awesome;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         right: 0;
         line-height: 1;
       }
