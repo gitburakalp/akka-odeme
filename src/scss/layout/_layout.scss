@@ -1,11 +1,7 @@
 body {
   &.mode-payment {
     header {
-      background-color: $colors--dark-khaki;
-
-      @include media-breakpoint-up(lg) {
-        padding-bottom: 6rem;
-      }
+      box-shadow: 0 0 4px 0px $colors--dull-brown;
 
       + main {
         .payment-block {

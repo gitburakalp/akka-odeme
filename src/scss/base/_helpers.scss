@@ -1,0 +1,51 @@
+%menu-title {
+  font-family: $FontDidot;
+  -webkit-text-stroke: 0.3px $colors--dull-brown-two;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.55;
+  letter-spacing: 5.5px;
+  color: $colors--dull-brown-two;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: vw(13, 1024);
+    letter-spacing: vw(5, 1024);
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: vw(18, 1920);
+    letter-spacing: vw(7.5, 1920);
+  }
+
+  @include media-breakpoint-up(huge) {
+    font-size: 18px;
+    letter-spacing: 7.5px;
+  }
+}
+
+%menu-subtitle {
+  font-family: $FontJosefinSans;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.27;
+  letter-spacing: 4.5px;
+  color: $colors--navy;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: vw(13, 1024);
+    letter-spacing: vw(3.9, 1024);
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: vw(20, 1920);
+    letter-spacing: vw(6, 1920);
+  }
+
+  @include media-breakpoint-up(huge) {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+}

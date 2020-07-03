@@ -28,3 +28,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+$(".footer .instagram-list").each(function () {
+  $.ajax({
+    type: "GET",
+    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+    // url: `https://www.akkabooking.com/api/Instagram/GetInstagramUser?userid=${userId}`,
+    url:
+      "https://www.akkabooking.com/api/Instagram/GetInstagramMedia?username=akkahotelsantalya",
+    crossDomain: true,
+    success: function (response) {
+      var responseJSON = response;
+
+      for (var i = 0; i < 4; i++) {
+        var responseData = responseJSON.Images[i];
+        var thumbs = responseData.ThumbnailResources[0].Src;
+        var link = responseData.Link;
+        var $listItem = $(".footer .instagram-list > .instagram-list-item").eq(
+          i
+        );
+
+        $listItem.find(".instagram-list-link").attr("href", link);
+        $listItem.find(".instagram-list-link").attr("target", "_blank");
+        $listItem.find("img").attr("src", thumbs);
+      }
+    },
+    timeout: 6e4,
+  });
+});
+
+$(".user-block > *:nth-child(1)").on("click", function () {
+  $(this).toggleClass("active");
+});

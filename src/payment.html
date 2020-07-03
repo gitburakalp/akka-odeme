@@ -1,226 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body class="mode-payment">
+  <body class="mode-payment">
     <header class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-auto support-column">
-                    <a href="#!" class="support-link">
-                        <h4 class="title">
-                            <div class="form-row">
-                                <div class="col-auto col-md-12">
-                                    Online<br class="d-md-none"> Destek
-                                </div>
-                                <div class="col col-md-12">
-                                    <span class="ls--08">+90 242 824 99 99</span>
-                                </div>
-                            </div>
-                        </h4>
-                    </a>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto support-column">
+            <a href="#!" class="support-link">
+              <h4 class="title">
+                <div class="form-row">
+                  <div class="col-auto col-md-12">
+                    Online<br class="d-md-none" />
+                    Destek
+                  </div>
+                  <div class="col col-md-12">
+                    <span class="ls--08">+90 242 824 99 99</span>
+                  </div>
                 </div>
-                <a href="#!" class="brand">
-                    <img class="brand-img" src="https://www.akkahotels.com/Storage/svg/hotel-logos/akka-hotels.svg"
-                        alt="">
-                </a>
-                <div class="col-12 col-lg-auto ml-auto user-block">
-                    <p class="font-weight-bold f-16">
-                        Sayın Murat TAHTACI <a href="#!" class="text-underline ml-4">ÇIKIŞ YAP</a>
-                    </p>
-                </div>
-                <div class="col-auto">
-                    <a class="language-trigger">
-                        TR
-                    </a>
-                    <div class="languages">
-                        <a href="#!" class="languages-link">
-                            TR
-                        </a>
-                        <a href="#!" class="languages-link">
-                            EN
-                        </a>
-                        <a href="#!" class="languages-link">
-                            DE
-                        </a>
-                        <a href="#!" class="languages-link">
-                            RU
-                        </a>
-                    </div>
-                </div>
+              </h4>
+            </a>
+          </div>
+          <a href="#!" class="brand">
+            <img
+              class="brand-img"
+              src="/Storage/svg/hotel-logos/akka-hotels-icon.svg"
+              alt=""
+            />
+          </a>
+
+          <div
+            class="col-12 col-lg-auto ml-auto user-block"
+            style="display: flex;"
+          >
+            <p class="font-weight-bold f-16">
+              Dear Burak Alp
+            </p>
+            <p class="font-weight-bold f-16">
+              <a href="/Account/Index" class="text-underline ml-4">Profile</a>
+            </p>
+            <p class="font-weight-bold f-16">
+              <a href="/Payment/Edit" class="text-underline ml-4"
+                >Make Payment</a
+              >
+            </p>
+            <p class="font-weight-bold f-16">
+              <a href="/Payment/Index" class="text-underline ml-4">Payments</a>
+            </p>
+            <p class="font-weight-bold f-16">
+              <a href="/Member/Logout" class="text-underline ml-4">Log Out</a>
+            </p>
+          </div>
+          <div class="col-auto">
+            <a class="language-trigger">
+              TR
+            </a>
+            <div class="languages">
+              <a href="#!" class="languages-link">
+                TR
+              </a>
+              <a href="#!" class="languages-link">
+                EN
+              </a>
+              <a href="#!" class="languages-link">
+                DE
+              </a>
+              <a href="#!" class="languages-link">
+                RU
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <main class="main">
-        <section class="payment-block">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-8">
-                        <h4 class="title-serif text-color-khaki f-30">
-                            ÖDEME SAYFASI
-                        </h4>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-4">
-                        <select class="form-control">
-                            <option value="">Otel Seçiniz</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <select class="form-control">
-                            <option value="">Ödeme Tipi Seçiniz</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-8">
-                        <textarea rows="6" class="form-control"
-                            placeholder="Kimin adına veya kimin için ödeme yaptığınızı belirtiniz"></textarea>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-4">
-                        <h4 class="title text-color-warm-grey mb-3">
-                            Amount to be paid:
-                        </h4>
-                        <input class="form-control" placeholder="0.00">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <h4 class="title text-color-warm-grey mb-3">
-                            Rate:
-                        </h4>
-                        <select class="form-control">
-                            <option value="">TRY</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-8">
-                        <p class="description text-color-warm-grey">
-                            Make sure to enter the amount, currency, hotel information and payment type you want to pay
-                            correctly. If there is a problem, call support on +90 (533) 032 18 37.
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-4">
-                        <input class="form-control" placeholder="Name">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <input class="form-control" placeholder="Card Number">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-8">
-                        <p class="description text-color-warm-grey mb-3">
-                            Valid Date
-                        </p>
-
-                        <div class="row align-items-center">
-                            <div class="col-3 col-lg-2">
-                                <select class="form-control">
-                                    <option value="">Month</option>
-                                </select>
-                            </div>
-                            <div class="col-3 col-lg-2">
-                                <select class="form-control">
-                                    <option value="">Year</option>
-                                </select>
-                            </div>
-                            <div class="col">
-                                <input type="checkbox" id="chkTerm">
-                                <label for="chkTerm" class="f-14"> I read and accept rules (Letter of
-                                    Undertaking)</label>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+      <section class="payment-block">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <h4 class="title-serif text-color-khaki f-30">
+                ÖDEME SAYFASI
+              </h4>
             </div>
-        </section>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+              <select class="form-control">
+                <option value="">Otel Seçiniz</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4">
+              <select class="form-control">
+                <option value="">Ödeme Tipi Seçiniz</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <textarea
+                rows="6"
+                class="form-control"
+                placeholder="Kimin adına veya kimin için ödeme yaptığınızı belirtiniz"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+              <h4 class="title text-color-warm-grey mb-3">
+                Amount to be paid:
+              </h4>
+              <input class="form-control" placeholder="0.00" />
+            </div>
+            <div class="col-12 col-lg-4">
+              <h4 class="title text-color-warm-grey mb-3">
+                Rate:
+              </h4>
+              <select class="form-control">
+                <option value="">TRY</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p class="description text-color-warm-grey">
+                Make sure to enter the amount, currency, hotel information and
+                payment type you want to pay correctly. If there is a problem,
+                call support on +90 (533) 032 18 37.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+              <input class="form-control" placeholder="Name" />
+            </div>
+            <div class="col-12 col-lg-4">
+              <input class="form-control" placeholder="Card Number" />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p class="description text-color-warm-grey mb-3">
+                Valid Date
+              </p>
+
+              <div class="row align-items-center">
+                <div class="col-3 col-lg-2">
+                  <select class="form-control">
+                    <option value="">Month</option>
+                  </select>
+                </div>
+                <div class="col-3 col-lg-2">
+                  <select class="form-control">
+                    <option value="">Year</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <input type="checkbox" id="chkTerm" />
+                  <label for="chkTerm" class="f-14">
+                    I read and accept rules (Letter of Undertaking)</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-block">
-                        <div class="row">
-                            <div class="col-12 col-lg">
-                                <div class="footer-list-block">
-                                    <ul class="footer-list">
-                                        <li class="footer-list-item">
-                                            <a href="#!" class="footer-list-link">
-                                                Akka Hotels Websitesi
-                                            </a>
-                                        </li>
-                                        <li class="footer-list-item">
-                                            <a href="#!" class="footer-list-link">
-                                                Kişisel Verilerin Korunması
-                                            </a>
-                                        </li>
-                                        <li class="footer-list-item">
-                                            <a href="#!" class="footer-list-link">
-                                                Aydınlatma Metni
-                                            </a>
-                                        </li>
-                                        <li class="footer-list-item">
-                                            <a href="#!" class="footer-list-link">
-                                                Veri Sahibi Başvuru Formu
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="footer-list">
-                                        <li class="footer-list-item">
-                                            <a href="#!" class="footer-list-link">
-                                                Gizlilik Sözleşmesi
-                                            </a>
-                                        </li>
-                                        <li class="footer-list-item">
-                                            <a href="#!" class="footer-list-link">
-                                                İptal Sözleşmesi
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-12 col-lg-6 col-xl-7 mt-5 mt-lg-0">
-                                <div class="find-us">
-                                    <h4 class="title-serif f-20 font-weight-normal text-color-navy">Lokasyon <a
-                                            href="https://goo.gl/maps/eChbEXkNFJnrmUWa8" target="_blank"
-                                            class="d-inline-block"><i class="fal fa-map-marker"></i></a></h4>
-                                    <p class="description">
-                                        Akka Hotels<br>
-                                        Beldibi Mahallesi Başkomutan Atatürk Caddesi NO:81<br><br>
-                                        Kemer/ANTALYA
-                                        <a href="tel:+902428249999" class="d-block mt-4">
-                                            T: +90 242 824 99 99
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-12">
-                                <p class="copyright text-center text-lg-left">
-                                    © Copyright 2020 - Akka Hotels
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="newsletter-block">
+        <div class="form-row align-items-center justify-content-md-end">
+          <div class="col-12 col-md-auto mb-3 mb-md-0">
+            <p class="newsletter-desc">
+              <b>SİZE ÖZEL</b> ayrıcaklardan haber olmak için kayıt olun.
+            </p>
+          </div>
+          <div class="col col-md-auto newsletter-inp-block">
+            <input
+              class="form-control newsletter-inp"
+              type="text"
+              id="staticsubEmail"
+              placeholder="Newsletter Sign Up"
+            />
+          </div>
+          <div class="col-4 col-md-auto newsletter-btn-block">
+            <a class="newsletter-btn" id="saveBulletin">Submit</a>
+          </div>
         </div>
+      </div>
+      <div class="footer__container">
+        <div class="row">
+          <div class="col-12 col-xl-auto order-xl-2">
+            <div class="form-row align-items-center mb-md-5 mb-xl-0">
+              <div class="col-12 col-md col-xl-12">
+                <ul class="instagram-list">
+                  <li class="instagram-list-item">
+                    <a href="#!" class="instagram-list-link">
+                      <figure class="img">
+                        <img src="https://via.placeholder.com/120x120" />
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="instagram-list-item">
+                    <a href="#!" class="instagram-list-link">
+                      <figure class="img">
+                        <img src="https://via.placeholder.com/120x120" />
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="instagram-list-item">
+                    <a href="#!" class="instagram-list-link">
+                      <figure class="img">
+                        <img src="https://via.placeholder.com/120x120" />
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="instagram-list-item">
+                    <a href="#!" class="instagram-list-link">
+                      <figure class="img">
+                        <img src="https://via.placeholder.com/120x120" />
+                      </figure>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-xl-12">
+                <div class="follow-us my-5">
+                  <div class="text-center">
+                    @<a
+                      href="https://www.instagram.com/akkahotelsantalya"
+                      class="font-weight-bold"
+                      target="_blank"
+                      data-insta-link=""
+                      >akkahotelsantalya</a
+                    >
+                    on Instagram
+                  </div>
+                  <div
+                    class="form-row mt-3 justify-content-center align-items-center"
+                  >
+                    <div class="col-auto text-center">
+                      <p class="inst">Follow Us</p>
+                    </div>
+                    <div class="col-auto ml-3">
+                      <ul class="footer__social-menu">
+                        <li class="footer__social-menu-item">
+                          <a
+                            href="https://www.facebook.com/HotelsAkka/"
+                            target="_blank"
+                            class="footer__social-menu-link"
+                          >
+                            <i
+                              id="btnFacebook-tr"
+                              class="fab fa-facebook-f facebookClass-tr"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="footer__social-menu-item">
+                          <a
+                            href="https://twitter.com/akka_hotels"
+                            target="_blank"
+                            class="footer__social-menu-link"
+                          >
+                            <i
+                              id="btnTwitter-tr"
+                              class="fab fa-twitter twitterClass-tr"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="footer__social-menu-item">
+                          <a
+                            href="https://www.instagram.com/akkahotelsantalya/"
+                            target="_blank"
+                            class="footer__social-menu-link"
+                          >
+                            <i
+                              id="btnInstagram-tr"
+                              class="fab fa-instagram instagramClass-tr"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="footer__social-menu-item">
+                          <a
+                            href="https://www.youtube.com/channel/UCPHCTwj6hfijV4-YqFxcO4g"
+                            target="_blank"
+                            class="footer__social-menu-link"
+                          >
+                            <i
+                              id="btnYoutube-tr"
+                              class="fab fa-youtube youtubeClass-tr"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl">
+            <div class="row">
+              <div class="col-12">
+                <ul class="hotels-list">
+                  <li class="hotels-list-item">
+                    <a href="/tr/antedon" class="hotels-list-link">
+                      <span>AKKA</span>
+                      ANTEDON
+                    </a>
+                  </li>
+                  <li class="hotels-list-item">
+                    <a href="/tr/alinda" class="hotels-list-link">
+                      <span>AKKA</span>
+                      ALINDA
+                    </a>
+                  </li>
+                  <li class="hotels-list-item">
+                    <a href="/tr/residence" class="hotels-list-link">
+                      <span>AKKA</span>
+                      RESIDENCE
+                    </a>
+                  </li>
+                  <li class="hotels-list-item">
+                    <a href="/tr/claros" class="hotels-list-link">
+                      <span>AKKA</span>
+                      CLAROS
+                    </a>
+                  </li>
+                  <li class="hotels-list-item">
+                    <a href="/tr/akka-suites" class="hotels-list-link">
+                      <span>AKKA</span>
+                      SUITES
+                    </a>
+                  </li>
+                  <li class="hotels-list-item">
+                    <a href="/tr/akka-lush" class="hotels-list-link">
+                      <span>AKKA</span>
+                      LUSH
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row my-md-5">
+              <div class="col-12">
+                <div class="footer__menu-block">
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <h3 class="footer__find-us mb-3">
+                        Lokasyon
+                        <a
+                          href="https://goo.gl/maps/eChbEXkNFJnrmUWa8"
+                          data-footer-elem="location"
+                          target="_blank"
+                          class="d-inline-block"
+                          ><i class="fal fa-map-marker"></i
+                        ></a>
+                      </h3>
+                    </li>
+                    <li class="footer__menu-item">
+                      <p class="footer__address" data-footer-elem="hotelName">
+                        Akka Hotels
+                      </p>
+                      <p
+                        class="footer__address mb-4"
+                        data-footer-elem="address"
+                      >
+                        Beldibi Mahallesi Başkomutan Atatürk Caddesi NO:81<br />Kemer/ANTALYA
+                      </p>
+                      <a
+                        id="btnPhoneNo-tr"
+                        href="tel:+902428249999"
+                        class="footer__phone phoneNoClass-tr mb-4"
+                        data-footer-elem="phone"
+                      >
+                        T: +90 242 824 99 99
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <a
+                        id="btnContact-tr"
+                        href=" contactLink"
+                        class="footer__menu-link contactClass-tr"
+                      >
+                        İletişim
+                      </a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href=" aboutAkkaLink" class="footer__menu-link">
+                        Hakkimizda
+                      </a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href=" carrierLink" class="footer__menu-link">
+                        Kariyer
+                      </a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href=" userAgreementLink" class="footer__menu-link">
+                        Kullanıcı Sözleşmesi
+                      </a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <div class="dropdown">
+                        <a
+                          class="footer__menu-link dropdown-toggle"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Kvkk
+                        </a>
+
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <a
+                            href="/Storage/pdf/kvkk-tr.pdf"
+                            class="dropdown-item"
+                            target="_blank"
+                            >Kişisel Verilerin Korunması</a
+                          >
+                          <a
+                            href="/Storage/pdf/aydinlatma-tr.pdf"
+                            class="dropdown-item"
+                            target="_blank"
+                            >Aydınlatma Metni</a
+                          >
+                          <a
+                            href="/Storage/pdf/basvuru-form-tr.pdf"
+                            class="dropdown-item"
+                            target="_blank"
+                            >Veri Sahibi Başvuru Formu</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <a
+                        href="https://pay.akkahotels.com/"
+                        class="footer__menu-link"
+                      >
+                        <i>AKKA <b>PAY</b></i>
+                      </a>
+                    </li>
+
+                    <li class="footer__menu-item">
+                      <a href=" privacyPolicyLink" class="footer__menu-link">
+                        Gizlilik Sözleşmesi
+                      </a>
+                    </li>
+
+                    <li class="footer__menu-item">
+                      <a
+                        href=" cancellationPolicyLink"
+                        class="footer__menu-link"
+                      >
+                        İptal Sözleşmesi
+                      </a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a
+                        href=" onlineAcommodationFormLink"
+                        class="footer__menu-link"
+                      >
+                        Online Konaklama Formu
+                      </a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href=" specialPagesLink" class="footer__menu-link">
+                        Özel Sayfalar
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <div class="form-row">
+                        <div class="col-auto">
+                          <img
+                            class="img-fluid footer-logos"
+                            src="https://cdn.akkahotels.com/Storage/svg/wifi-colored.svg"
+                            alt="Yüksek Hızda, Güvenilir ve Sınırsız İnternet"
+                            title="Yüksek Hızda, Güvenilir ve Sınırsız İnternet"
+                          />
+                        </div>
+                        <div class="col-auto">
+                          <img
+                            class="img-fluid footer-logos"
+                            src="https://cdn.akkahotels.com/Storage/svg/akka-pay-icon.svg"
+                            alt="akkaPayText"
+                            title="akkaPayText"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-between mt-4">
+        <div class="col-12">
+          <p class="footer__copyright text-white text-md-center">
+            © Copyright 2019 - Akka Hotels
+          </p>
+        </div>
+      </div>
     </footer>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/main.js"></script>
-</body>
-
+  </body>
 </html>
