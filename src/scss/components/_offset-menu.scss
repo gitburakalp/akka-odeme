@@ -1,0 +1,35 @@
+.offset-menu {
+  &-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    overflow: hidden;
+    transition: opacity $duration;
+
+    &.is-shown {
+      opacity: 1;
+      visibility: visible;
+      z-index: 999;
+
+      .offset-menu {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+    width: 375px;
+    height: 100%;
+    background-color: $colors--white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 250ms 0s linear;
+    transform: translateX(-125%);
+  }
+}

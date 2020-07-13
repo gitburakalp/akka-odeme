@@ -113,15 +113,15 @@
       max-height: 44px;
 
       @include media-breakpoint-up(md) {
-        max-height: 5.10417vw;
+        max-height: vw(58, 1024);
       }
 
       @include media-breakpoint-up(xl) {
-        max-height: 6.73828vw;
+        max-height: vw(80, 1920);
       }
 
       @include media-breakpoint-up(huge) {
-        max-height: 98px;
+        max-height: 80px;
       }
     }
   }
