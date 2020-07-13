@@ -14,11 +14,15 @@
       border-color: $colors--navy;
     }
   }
+
+  &--logout {
+    font-size: 1.6rem;
+  }
 }
 
 .btn--hamburger {
   display: inline-block;
-  background-color: $colors--black;
+  background-color: $colors--navy;
   color: $colors--white !important;
 
   width: 73px;
@@ -43,5 +47,24 @@
 
   > * {
     display: block;
+  }
+}
+
+.payment-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  background-color: $colors--dark-khaki;
+  color: $colors--white !important;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  font-size: 1.6rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0;
   }
 }

@@ -60,3 +60,13 @@ $(".footer .instagram-list").each(function () {
 $(".user-block > *:nth-child(1)").on("click", function () {
   $(this).toggleClass("active");
 });
+
+$(".btn--hamburger").on("click", function (e) {
+  e.preventDefault();
+
+  $(".offset-menu-block").addClass("is-shown");
+});
+
+$("[close-btn]").on("click", function () {
+  $(".offset-menu-block").removeClass("is-shown");
+});

@@ -1,73 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="offset-menu-block">
-      <div class="offset-menu">
-        <ul class="o-menu">
-          <li class="o-menu-item">
-            Dear Mr. President
-          </li>
-          <li class="o-menu-item">
-            <a class="o-menu-link">
-              Profile
-            </a>
-          </li>
-          <li class="o-menu-item">
-            <a class="o-menu-link">
-              Payments
-            </a>
-          </li>
-          <li class="o-menu-item">
-            <a class="o-menu-link">
-              Make Payment
-            </a>
-          </li>
-          <li class="o-menu-item">
-            <a class="o-menu-link">
-              Log Out
-            </a>
-          </li>
-        </ul>
-        <div class="offset-menu-footer">
-          <div class="form-row">
-            <div class="col-12">
-              <a href="#!" class="support-link">
-                <h4 class="title">
-                  <div class="form-row">
-                    <div class="col-auto col-md-12">
-                      Online<br class="d-md-none" />
-                      Destek
-                    </div>
-                    <div class="col col-md-12">
-                      <span class="ls--08">+90 242 824 99 99</span>
-                    </div>
-                  </div>
-                </h4>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <header class="header">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-auto">
-            <a class="btn--hamburger">
-              <i class="fal fa-align-justify"></i>
-              <span class="text">
-                Menu
-              </span>
-            </a>
-          </div>
-          <div class="col-auto support-column">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="offset-menu-block">
+    <i class="fal fa-times-circle" close-btn></i>
+    <div class="offset-menu">
+      <ul class="o-menu">
+        <li class="o-menu-item account">
+          Dear Mr. President
+        </li>
+        <li class="o-menu-item">
+          <a class="o-menu-link">
+            Profile
+          </a>
+        </li>
+        <li class="o-menu-item">
+          <a class="o-menu-link">
+            Payments
+          </a>
+        </li>
+        <li class="o-menu-item">
+          <a class="o-menu-link payment">
+            Make Payment
+          </a>
+        </li>
+        <li class="o-menu-item">
+          <a class="o-menu-link">
+            Log Out
+          </a>
+        </li>
+      </ul>
+      <div class="offset-menu-footer">
+        <div class="form-row">
+          <div class="col-12">
             <a href="#!" class="support-link">
               <h4 class="title">
                 <div class="form-row">
@@ -82,629 +54,527 @@
               </h4>
             </a>
           </div>
-          <a href="#!" class="brand">
-            <img
-              class="brand-img"
-              src="/Storage/svg/hotel-logos/akka-hotels-icon.svg"
-              alt=""
-            />
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-auto left-col">
+          <a class="payment-button">
+            MAKE A PAYMENT
           </a>
-          <div class="col-auto">
-            <a class="language-trigger">
+          <a class="btn--hamburger">
+            <i class="fal fa-align-justify"></i>
+            <span class="text">
+              Menu
+            </span>
+          </a>
+        </div>
+
+        <a href="#!" class="brand">
+          <img class="brand-img" src="/Storage/svg/hotel-logos/akka-hotels-icon.svg" alt="" />
+        </a>
+        <div class="col-auto">
+          <a class="language-trigger">
+            TR
+          </a>
+          <div class="languages">
+            <a href="#!" class="languages-link">
               TR
             </a>
-            <div class="languages">
-              <a href="#!" class="languages-link">
-                TR
+            <a href="#!" class="languages-link">
+              EN
+            </a>
+            <a href="#!" class="languages-link">
+              DE
+            </a>
+            <a href="#!" class="languages-link">
+              RU
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero-section">
+      <figure class="image">
+        <img src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/E713728A-074C-41BD-A725-7C2E8E4033BF.png"
+          alt="" />
+      </figure>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-auto">
+            <div class="left-side">
+              <h2 class="title f-36">
+                Hızlı, güvenilir Sanal POS altyapımızla
+              </h2>
+              <h3 class="title-serif font-weight-normal f-30">
+                3 adımda ödeme almaya başla
+              </h3>
+              <ul class="order-list--circle mt-4">
+                <li class="order-list-item">
+                  Hesabınızı Oluşturun
+                </li>
+                <li class="order-list-item">
+                  Bilgilerinizi Tamamlayın
+                </li>
+                <li class="order-list-item">
+                  Sözleşmeyi onaylayın ve ödemenizi gerçekleştirin
+                </li>
+              </ul>
+              <h5 class="title f-22 mt-4 login-text">
+                Zaten üye misin?
+                <a href="#!" class="text-underline">Giriş Yap</a>
+              </h5>
+              <a class="title f-18 mt-2">
+                Şartlar ve Koşullar
               </a>
-              <a href="#!" class="languages-link">
-                EN
-              </a>
-              <a href="#!" class="languages-link">
-                DE
-              </a>
-              <a href="#!" class="languages-link">
-                RU
-              </a>
+              <h4 class="title f-65 login-title mb-5">
+                AKKA Güvenli<br />
+                Elektonik Ödeme Sistemine<br />
+                <span class="font-weight-light">Hoşgeldiniz</span>
+              </h4>
+            </div>
+          </div>
+          <div class="col-12 col-lg-auto mt-md-4 mt-lg-0 ml-lg-auto">
+            <div class="special-box">
+              <form id="loginForm" class="login-form">
+                <div class="form-row">
+                  <div class="col-12">
+                    <h2 class="title-serif text-color-khaki text-center f-24">
+                      Giriş Yapın
+                    </h2>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <input class="form-control" placeholder="İsim" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <input class="form-control" placeholder="Soyisim" />
+                  </div>
+                </div>
+                <div class="form-row mt-5">
+                  <div class="col-6 mx-auto">
+                    <a href="#!" class="d-block btn btn--navy">GİRİŞ</a>
+                  </div>
+                </div>
+                <div class="form-row mt-5">
+                  <div class="col-12">
+                    <ul class="account-list">
+                      <li>
+                        <a class="link dismiss-btn">
+                          Üye Olmak İstiyorum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#!" class="link">
+                          Şifremi Unuttum?
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-row mt-5">
+                  <div class="col-12">
+                    <p class="description font-family-serif text-color-khaki f-16 text-center">
+                      Members who register for the bonus page will be deemed
+                      to have accepted all the terms and conditions contained
+                      in the main home page.
+                    </p>
+                  </div>
+                </div>
+              </form>
+              <form id="signupForm" class="sign-up-form">
+                <div class="form-row">
+                  <div class="col-12">
+                    <h2 class="title-serif text-color-khaki text-center f-24">
+                      Hesabınızı Oluşturun
+                    </h2>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <input class="form-control" placeholder="İsim" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <input class="form-control" placeholder="Soyisim" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <input class="form-control" placeholder="E-Posta" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <input class="form-control" placeholder="Telefon Numaranız" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <input class="form-control" placeholder="Şifreniz" />
+                  </div>
+                </div>
+                <div class="form-row mt-5">
+                  <div class="col-12">
+                    <input type="checkbox" id="chkKvkk" />
+                    <label for="chkKvkk">KVKK Aydınlatma Metni’ni okuduğunuzu kabul etmelisiniz.
+                      <span class="text-color-azul font-weight-bold text-underline">KVKK Aydınlatma Okumak İçin
+                        tıklayınız</span></label>
+                  </div>
+                </div>
+                <div class="form-row mt-5">
+                  <div class="col-6 mx-auto">
+                    <a href="#!" class="d-block btn btn--navy">KAYIT</a>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="hero-section">
-        <figure class="image">
-          <img
-            src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/E713728A-074C-41BD-A725-7C2E8E4033BF.png"
-            alt=""
-          />
-        </figure>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-auto">
-              <div class="left-side">
-                <h2 class="title f-36">
-                  Hızlı, güvenilir Sanal POS altyapımızla
-                </h2>
-                <h3 class="title-serif font-weight-normal f-30">
-                  3 adımda ödeme almaya başla
-                </h3>
-                <ul class="order-list--circle mt-4">
-                  <li class="order-list-item">
-                    Hesabınızı Oluşturun
-                  </li>
-                  <li class="order-list-item">
-                    Bilgilerinizi Tamamlayın
-                  </li>
-                  <li class="order-list-item">
-                    Sözleşmeyi onaylayın ve ödemenizi gerçekleştirin
-                  </li>
-                </ul>
-                <h5 class="title f-22 mt-4 login-text">
-                  Zaten üye misin?
-                  <a href="#!" class="text-underline">Giriş Yap</a>
-                </h5>
-                <a class="title f-18 mt-2">
-                  Şartlar ve Koşullar
-                </a>
-                <h4 class="title f-65 login-title mb-5">
-                  AKKA Güvenli<br />
-                  Elektonik Ödeme Sistemine<br />
-                  <span class="font-weight-light">Hoşgeldiniz</span>
-                </h4>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto mt-md-4 mt-lg-0 ml-lg-auto">
-              <div class="special-box">
-                <form id="loginForm" class="login-form">
-                  <div class="form-row">
-                    <div class="col-12">
-                      <h2 class="title-serif text-color-khaki text-center f-24">
-                        Giriş Yapın
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-12">
-                      <input class="form-control" placeholder="İsim" />
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-12">
-                      <input class="form-control" placeholder="Soyisim" />
-                    </div>
-                  </div>
-                  <div class="form-row mt-5">
-                    <div class="col-6 mx-auto">
-                      <a href="#!" class="d-block btn btn--navy">GİRİŞ</a>
-                    </div>
-                  </div>
-                  <div class="form-row mt-5">
-                    <div class="col-12">
-                      <ul class="account-list">
-                        <li>
-                          <a class="link dismiss-btn">
-                            Üye Olmak İstiyorum
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#!" class="link">
-                            Şifremi Unuttum?
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="form-row mt-5">
-                    <div class="col-12">
-                      <p
-                        class="description font-family-serif text-color-khaki f-16 text-center"
-                      >
-                        Members who register for the bonus page will be deemed
-                        to have accepted all the terms and conditions contained
-                        in the main home page.
-                      </p>
-                    </div>
-                  </div>
-                </form>
-                <form id="signupForm" class="sign-up-form">
-                  <div class="form-row">
-                    <div class="col-12">
-                      <h2 class="title-serif text-color-khaki text-center f-24">
-                        Hesabınızı Oluşturun
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-12">
-                      <input class="form-control" placeholder="İsim" />
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-12">
-                      <input class="form-control" placeholder="Soyisim" />
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-12">
-                      <input class="form-control" placeholder="E-Posta" />
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-12">
-                      <input
-                        class="form-control"
-                        placeholder="Telefon Numaranız"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-12">
-                      <input class="form-control" placeholder="Şifreniz" />
-                    </div>
-                  </div>
-                  <div class="form-row mt-5">
-                    <div class="col-12">
-                      <input type="checkbox" id="chkKvkk" />
-                      <label for="chkKvkk"
-                        >KVKK Aydınlatma Metni’ni okuduğunuzu kabul etmelisiniz.
-                        <span
-                          class="text-color-azul font-weight-bold text-underline"
-                          >KVKK Aydınlatma Okumak İçin tıklayınız</span
-                        ></label
-                      >
-                    </div>
-                  </div>
-                  <div class="form-row mt-5">
-                    <div class="col-6 mx-auto">
-                      <a href="#!" class="d-block btn btn--navy">KAYIT</a>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+    </section>
+    <section class="brands-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-auto mastercard">
+            <img class="img-fluid" src="/images/mastercard.svg" alt="Mastercard" />
+          </div>
+          <div class="col-lg-auto visa">
+            <img class="img-fluid"
+              src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/AAE9B940-BA12-41E0-995B-23B717A2198C.png"
+              alt="VISA" />
+          </div>
+          <div class="col-lg-auto garanti ml-md-auto">
+            <img class="img-fluid" src="/images/garanti.png" alt="Garanti BBVA" />
+          </div>
+          <div class="col-lg-auto yapi-kredi">
+            <img class="img-fluid"
+              src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/135B8269-4431-4672-8D57-8088C6D3F63F.png"
+              alt="Yapı Kredi" />
+          </div>
+          <div class="col-lg-auto akbank">
+            <img class="img-fluid"
+              src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/6D28FCC2-D41F-4FBA-AFFE-7A59AE5EBB4F.png"
+              alt="AKBANK" />
+          </div>
+          <div class="col-lg-auto turkiye-is-bankasi">
+            <img class="img-fluid"
+              src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/F9D3CE18-CAE1-48B2-97B3-4AEA27ADDBBB.png"
+              alt="Türkiye İş Bankası" />
+          </div>
+          <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-3">
+            <h6 class="title-serif text-color-khaki f-20 text-center">
+              Anlaşmalı olduğumuz bankalarla kredi kartı taksitli ödeme
+              avantajları
+            </h6>
           </div>
         </div>
-      </section>
-      <section class="brands-section">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-auto mastercard">
-              <img
-                class="img-fluid"
-                src="/images/mastercard.svg"
-                alt="Mastercard"
-              />
-            </div>
-            <div class="col-lg-auto visa">
-              <img
-                class="img-fluid"
-                src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/AAE9B940-BA12-41E0-995B-23B717A2198C.png"
-                alt="VISA"
-              />
-            </div>
-            <div class="col-lg-auto garanti ml-md-auto">
-              <img
-                class="img-fluid"
-                src="/images/garanti.png"
-                alt="Garanti BBVA"
-              />
-            </div>
-            <div class="col-lg-auto yapi-kredi">
-              <img
-                class="img-fluid"
-                src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/135B8269-4431-4672-8D57-8088C6D3F63F.png"
-                alt="Yapı Kredi"
-              />
-            </div>
-            <div class="col-lg-auto akbank">
-              <img
-                class="img-fluid"
-                src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/6D28FCC2-D41F-4FBA-AFFE-7A59AE5EBB4F.png"
-                alt="AKBANK"
-              />
-            </div>
-            <div class="col-lg-auto turkiye-is-bankasi">
-              <img
-                class="img-fluid"
-                src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/F9D3CE18-CAE1-48B2-97B3-4AEA27ADDBBB.png"
-                alt="Türkiye İş Bankası"
-              />
-            </div>
-            <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-3">
-              <h6 class="title-serif text-color-khaki f-20 text-center">
-                Anlaşmalı olduğumuz bankalarla kredi kartı taksitli ödeme
-                avantajları
-              </h6>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="title-desc-image-block">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="title-desc-block">
-              <h4 class="title-serif text-color-khaki f-30">
-                AKKA ÖDEME 3D Güvencesinde
-              </h4>
-              <p class="description f-15 font-weight-light">
-                Online ödeme işlemlerinde güvenliğin arttırılması için
-                kullanılan 3D secure sistemi Visa ve MasterCard tarafından
-                geliştirilen bir sistem olarak tüm online alışverişlerde
-                kullanılmaktadır. Güvenli ödeme için yapmanız gereken tek şey 3D
-                secure sistemine üye olmak. Üyeliğinizi gerçekleştirdikten sonra
-                olası güvenlik ihlallerinden tamamen korunur hale gelir ve
-                ödemelerinizi güvenle yapabilirsiniz. 3D Secure sistemi
-                sayesinde, tüm bilgileriniz koruma altına alınır. 3D güvenlik
-                sistemi sayesinde bilgileriniz akkaodeme.com üzerinden direkt
-                olarak bankaya iletilir. Bu sayede bilgilerinizi ne
-                akkaodeme.com ne de üçüncü şahıslar herhangi bir sebeple
-                görüntüleyemez.
-              </p>
-            </div>
-            <div class="image-block">
-              <figure class="image">
-                <img
-                  class="img-fluid"
-                  src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/D0963670-EC8D-4B92-9452-CB996ACD130F.png"
-                  alt=""
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="newsletter-block">
-        <div class="form-row align-items-center justify-content-md-end">
-          <div class="col-12 col-md-auto mb-3 mb-md-0">
-            <p class="newsletter-desc">
-              <b>SİZE ÖZEL</b> ayrıcaklardan haber olmak için kayıt olun.
+      </div>
+    </section>
+    <section class="title-desc-image-block">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="title-desc-block">
+            <h4 class="title-serif text-color-khaki f-30">
+              AKKA ÖDEME 3D Güvencesinde
+            </h4>
+            <p class="description f-15 font-weight-light">
+              Online ödeme işlemlerinde güvenliğin arttırılması için
+              kullanılan 3D secure sistemi Visa ve MasterCard tarafından
+              geliştirilen bir sistem olarak tüm online alışverişlerde
+              kullanılmaktadır. Güvenli ödeme için yapmanız gereken tek şey 3D
+              secure sistemine üye olmak. Üyeliğinizi gerçekleştirdikten sonra
+              olası güvenlik ihlallerinden tamamen korunur hale gelir ve
+              ödemelerinizi güvenle yapabilirsiniz. 3D Secure sistemi
+              sayesinde, tüm bilgileriniz koruma altına alınır. 3D güvenlik
+              sistemi sayesinde bilgileriniz akkaodeme.com üzerinden direkt
+              olarak bankaya iletilir. Bu sayede bilgilerinizi ne
+              akkaodeme.com ne de üçüncü şahıslar herhangi bir sebeple
+              görüntüleyemez.
             </p>
           </div>
-          <div class="col col-md-auto newsletter-inp-block">
-            <input
-              class="form-control newsletter-inp"
-              type="text"
-              id="staticsubEmail"
-              placeholder="Newsletter Sign Up"
-            />
-          </div>
-          <div class="col-4 col-md-auto newsletter-btn-block">
-            <a class="newsletter-btn" id="saveBulletin">Submit</a>
+          <div class="image-block">
+            <figure class="image">
+              <img class="img-fluid"
+                src="https://cdn.zeplin.io/5eb2c6de08faf74c97806c32/assets/D0963670-EC8D-4B92-9452-CB996ACD130F.png"
+                alt="" />
+            </figure>
           </div>
         </div>
       </div>
-      <div class="footer__container">
-        <div class="row">
-          <div class="col-12 col-xl-auto order-xl-2">
-            <div class="form-row align-items-center mb-md-5 mb-xl-0">
-              <div class="col-12 col-md col-xl-12">
-                <ul class="instagram-list">
-                  <li class="instagram-list-item">
-                    <a href="#!" class="instagram-list-link">
-                      <figure class="img">
-                        <img src="https://via.placeholder.com/120x120" />
-                      </figure>
-                    </a>
-                  </li>
-                  <li class="instagram-list-item">
-                    <a href="#!" class="instagram-list-link">
-                      <figure class="img">
-                        <img src="https://via.placeholder.com/120x120" />
-                      </figure>
-                    </a>
-                  </li>
-                  <li class="instagram-list-item">
-                    <a href="#!" class="instagram-list-link">
-                      <figure class="img">
-                        <img src="https://via.placeholder.com/120x120" />
-                      </figure>
-                    </a>
-                  </li>
-                  <li class="instagram-list-item">
-                    <a href="#!" class="instagram-list-link">
-                      <figure class="img">
-                        <img src="https://via.placeholder.com/120x120" />
-                      </figure>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-4 col-xl-12">
-                <div class="follow-us my-5">
-                  <div class="text-center">
-                    @<a
-                      href="https://www.instagram.com/akkahotelsantalya"
-                      class="font-weight-bold"
-                      target="_blank"
-                      data-insta-link=""
-                      >akkahotelsantalya</a
-                    >
-                    on Instagram
-                  </div>
-                  <div
-                    class="form-row mt-3 justify-content-center align-items-center"
-                  >
-                    <div class="col-auto text-center">
-                      <p class="inst">Follow Us</p>
-                    </div>
-                    <div class="col-auto ml-3">
-                      <ul class="footer__social-menu">
-                        <li class="footer__social-menu-item">
-                          <a
-                            href="https://www.facebook.com/HotelsAkka/"
-                            target="_blank"
-                            class="footer__social-menu-link"
-                          >
-                            <i
-                              id="btnFacebook-tr"
-                              class="fab fa-facebook-f facebookClass-tr"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="footer__social-menu-item">
-                          <a
-                            href="https://twitter.com/akka_hotels"
-                            target="_blank"
-                            class="footer__social-menu-link"
-                          >
-                            <i
-                              id="btnTwitter-tr"
-                              class="fab fa-twitter twitterClass-tr"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="footer__social-menu-item">
-                          <a
-                            href="https://www.instagram.com/akkahotelsantalya/"
-                            target="_blank"
-                            class="footer__social-menu-link"
-                          >
-                            <i
-                              id="btnInstagram-tr"
-                              class="fab fa-instagram instagramClass-tr"
-                            ></i>
-                          </a>
-                        </li>
-                        <li class="footer__social-menu-item">
-                          <a
-                            href="https://www.youtube.com/channel/UCPHCTwj6hfijV4-YqFxcO4g"
-                            target="_blank"
-                            class="footer__social-menu-link"
-                          >
-                            <i
-                              id="btnYoutube-tr"
-                              class="fab fa-youtube youtubeClass-tr"
-                            ></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl">
-            <div class="row">
-              <div class="col-12">
-                <ul class="hotels-list">
-                  <li class="hotels-list-item">
-                    <a href="/tr/antedon" class="hotels-list-link">
-                      <span>AKKA</span>
-                      ANTEDON
-                    </a>
-                  </li>
-                  <li class="hotels-list-item">
-                    <a href="/tr/alinda" class="hotels-list-link">
-                      <span>AKKA</span>
-                      ALINDA
-                    </a>
-                  </li>
-                  <li class="hotels-list-item">
-                    <a href="/tr/residence" class="hotels-list-link">
-                      <span>AKKA</span>
-                      RESIDENCE
-                    </a>
-                  </li>
-                  <li class="hotels-list-item">
-                    <a href="/tr/claros" class="hotels-list-link">
-                      <span>AKKA</span>
-                      CLAROS
-                    </a>
-                  </li>
-                  <li class="hotels-list-item">
-                    <a href="/tr/akka-suites" class="hotels-list-link">
-                      <span>AKKA</span>
-                      SUITES
-                    </a>
-                  </li>
-                  <li class="hotels-list-item">
-                    <a href="/tr/akka-lush" class="hotels-list-link">
-                      <span>AKKA</span>
-                      LUSH
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="row my-md-5">
-              <div class="col-12">
-                <div class="footer__menu-block">
-                  <ul class="footer__menu">
-                    <li class="footer__menu-item">
-                      <h3 class="footer__find-us mb-3">
-                        Lokasyon
-                        <a
-                          href="https://goo.gl/maps/eChbEXkNFJnrmUWa8"
-                          data-footer-elem="location"
-                          target="_blank"
-                          class="d-inline-block"
-                          ><i class="fal fa-map-marker"></i
-                        ></a>
-                      </h3>
-                    </li>
-                    <li class="footer__menu-item">
-                      <p class="footer__address" data-footer-elem="hotelName">
-                        Akka Hotels
-                      </p>
-                      <p
-                        class="footer__address mb-4"
-                        data-footer-elem="address"
-                      >
-                        Beldibi Mahallesi Başkomutan Atatürk Caddesi NO:81<br />Kemer/ANTALYA
-                      </p>
-                      <a
-                        id="btnPhoneNo-tr"
-                        href="tel:+902428249999"
-                        class="footer__phone phoneNoClass-tr mb-4"
-                        data-footer-elem="phone"
-                      >
-                        T: +90 242 824 99 99
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="footer__menu">
-                    <li class="footer__menu-item">
-                      <a
-                        id="btnContact-tr"
-                        href=" contactLink"
-                        class="footer__menu-link contactClass-tr"
-                      >
-                        İletişim
-                      </a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a href=" aboutAkkaLink" class="footer__menu-link">
-                        Hakkimizda
-                      </a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a href=" carrierLink" class="footer__menu-link">
-                        Kariyer
-                      </a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a href=" userAgreementLink" class="footer__menu-link">
-                        Kullanıcı Sözleşmesi
-                      </a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <div class="dropdown">
-                        <a
-                          class="footer__menu-link dropdown-toggle"
-                          role="button"
-                          id="dropdownMenuLink"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          Kvkk
-                        </a>
-
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuLink"
-                        >
-                          <a
-                            href="/Storage/pdf/kvkk-tr.pdf"
-                            class="dropdown-item"
-                            target="_blank"
-                            >Kişisel Verilerin Korunması</a
-                          >
-                          <a
-                            href="/Storage/pdf/aydinlatma-tr.pdf"
-                            class="dropdown-item"
-                            target="_blank"
-                            >Aydınlatma Metni</a
-                          >
-                          <a
-                            href="/Storage/pdf/basvuru-form-tr.pdf"
-                            class="dropdown-item"
-                            target="_blank"
-                            >Veri Sahibi Başvuru Formu</a
-                          >
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <ul class="footer__menu">
-                    <li class="footer__menu-item">
-                      <a
-                        href="https://pay.akkahotels.com/"
-                        class="footer__menu-link"
-                      >
-                        <i>AKKA <b>PAY</b></i>
-                      </a>
-                    </li>
-
-                    <li class="footer__menu-item">
-                      <a href=" privacyPolicyLink" class="footer__menu-link">
-                        Gizlilik Sözleşmesi
-                      </a>
-                    </li>
-
-                    <li class="footer__menu-item">
-                      <a
-                        href=" cancellationPolicyLink"
-                        class="footer__menu-link"
-                      >
-                        İptal Sözleşmesi
-                      </a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a
-                        href=" onlineAcommodationFormLink"
-                        class="footer__menu-link"
-                      >
-                        Online Konaklama Formu
-                      </a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a href=" specialPagesLink" class="footer__menu-link">
-                        Özel Sayfalar
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="footer__menu">
-                    <li class="footer__menu-item">
-                      <div class="form-row">
-                        <div class="col-auto">
-                          <img
-                            class="img-fluid footer-logos"
-                            src="https://cdn.akkahotels.com/Storage/svg/wifi-colored.svg"
-                            alt="Yüksek Hızda, Güvenilir ve Sınırsız İnternet"
-                            title="Yüksek Hızda, Güvenilir ve Sınırsız İnternet"
-                          />
-                        </div>
-                        <div class="col-auto">
-                          <img
-                            class="img-fluid footer-logos"
-                            src="https://cdn.akkahotels.com/Storage/svg/akka-pay-icon.svg"
-                            alt="akkaPayText"
-                            title="akkaPayText"
-                          />
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row align-items-center justify-content-between mt-4">
-        <div class="col-12">
-          <p class="footer__copyright text-white text-md-center">
-            © Copyright 2019 - Akka Hotels
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="newsletter-block">
+      <div class="form-row align-items-center justify-content-md-end">
+        <div class="col-12 col-md-auto mb-3 mb-md-0">
+          <p class="newsletter-desc">
+            <b>SİZE ÖZEL</b> ayrıcaklardan haber olmak için kayıt olun.
           </p>
         </div>
+        <div class="col col-md-auto newsletter-inp-block">
+          <input class="form-control newsletter-inp" type="text" id="staticsubEmail" placeholder="Newsletter Sign Up" />
+        </div>
+        <div class="col-4 col-md-auto newsletter-btn-block">
+          <a class="newsletter-btn" id="saveBulletin">Submit</a>
+        </div>
       </div>
-    </footer>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-  </body>
+    </div>
+    <div class="footer__container">
+      <div class="row">
+        <div class="col-12 col-xl-auto order-xl-2">
+          <div class="form-row align-items-center mb-md-5 mb-xl-0">
+            <div class="col-12 col-md col-xl-12">
+              <ul class="instagram-list">
+                <li class="instagram-list-item">
+                  <a href="#!" class="instagram-list-link">
+                    <figure class="img">
+                      <img src="https://via.placeholder.com/120x120" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="instagram-list-item">
+                  <a href="#!" class="instagram-list-link">
+                    <figure class="img">
+                      <img src="https://via.placeholder.com/120x120" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="instagram-list-item">
+                  <a href="#!" class="instagram-list-link">
+                    <figure class="img">
+                      <img src="https://via.placeholder.com/120x120" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="instagram-list-item">
+                  <a href="#!" class="instagram-list-link">
+                    <figure class="img">
+                      <img src="https://via.placeholder.com/120x120" />
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 col-xl-12">
+              <div class="follow-us my-5">
+                <div class="text-center">
+                  @<a href="https://www.instagram.com/akkahotelsantalya" class="font-weight-bold" target="_blank"
+                    data-insta-link="">akkahotelsantalya</a>
+                  on Instagram
+                </div>
+                <div class="form-row mt-3 justify-content-center align-items-center">
+                  <div class="col-auto text-center">
+                    <p class="inst">Follow Us</p>
+                  </div>
+                  <div class="col-auto ml-3">
+                    <ul class="footer__social-menu">
+                      <li class="footer__social-menu-item">
+                        <a href="https://www.facebook.com/HotelsAkka/" target="_blank" class="footer__social-menu-link">
+                          <i id="btnFacebook-tr" class="fab fa-facebook-f facebookClass-tr"></i>
+                        </a>
+                      </li>
+                      <li class="footer__social-menu-item">
+                        <a href="https://twitter.com/akka_hotels" target="_blank" class="footer__social-menu-link">
+                          <i id="btnTwitter-tr" class="fab fa-twitter twitterClass-tr"></i>
+                        </a>
+                      </li>
+                      <li class="footer__social-menu-item">
+                        <a href="https://www.instagram.com/akkahotelsantalya/" target="_blank"
+                          class="footer__social-menu-link">
+                          <i id="btnInstagram-tr" class="fab fa-instagram instagramClass-tr"></i>
+                        </a>
+                      </li>
+                      <li class="footer__social-menu-item">
+                        <a href="https://www.youtube.com/channel/UCPHCTwj6hfijV4-YqFxcO4g" target="_blank"
+                          class="footer__social-menu-link">
+                          <i id="btnYoutube-tr" class="fab fa-youtube youtubeClass-tr"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl">
+          <div class="row">
+            <div class="col-12">
+              <ul class="hotels-list">
+                <li class="hotels-list-item">
+                  <a href="/tr/antedon" class="hotels-list-link">
+                    <span>AKKA</span>
+                    ANTEDON
+                  </a>
+                </li>
+                <li class="hotels-list-item">
+                  <a href="/tr/alinda" class="hotels-list-link">
+                    <span>AKKA</span>
+                    ALINDA
+                  </a>
+                </li>
+                <li class="hotels-list-item">
+                  <a href="/tr/residence" class="hotels-list-link">
+                    <span>AKKA</span>
+                    RESIDENCE
+                  </a>
+                </li>
+                <li class="hotels-list-item">
+                  <a href="/tr/claros" class="hotels-list-link">
+                    <span>AKKA</span>
+                    CLAROS
+                  </a>
+                </li>
+                <li class="hotels-list-item">
+                  <a href="/tr/akka-suites" class="hotels-list-link">
+                    <span>AKKA</span>
+                    SUITES
+                  </a>
+                </li>
+                <li class="hotels-list-item">
+                  <a href="/tr/akka-lush" class="hotels-list-link">
+                    <span>AKKA</span>
+                    LUSH
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row my-md-5">
+            <div class="col-12">
+              <div class="footer__menu-block">
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <h3 class="footer__find-us mb-3">
+                      Lokasyon
+                      <a href="https://goo.gl/maps/eChbEXkNFJnrmUWa8" data-footer-elem="location" target="_blank"
+                        class="d-inline-block"><i class="fal fa-map-marker"></i></a>
+                    </h3>
+                  </li>
+                  <li class="footer__menu-item">
+                    <p class="footer__address" data-footer-elem="hotelName">
+                      Akka Hotels
+                    </p>
+                    <p class="footer__address mb-4" data-footer-elem="address">
+                      Beldibi Mahallesi Başkomutan Atatürk Caddesi NO:81<br />Kemer/ANTALYA
+                    </p>
+                    <a id="btnPhoneNo-tr" href="tel:+902428249999" class="footer__phone phoneNoClass-tr mb-4"
+                      data-footer-elem="phone">
+                      T: +90 242 824 99 99
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <a id="btnContact-tr" href=" contactLink" class="footer__menu-link contactClass-tr">
+                      İletişim
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href=" aboutAkkaLink" class="footer__menu-link">
+                      Hakkimizda
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href=" carrierLink" class="footer__menu-link">
+                      Kariyer
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href=" userAgreementLink" class="footer__menu-link">
+                      Kullanıcı Sözleşmesi
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="dropdown">
+                      <a class="footer__menu-link dropdown-toggle" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kvkk
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a href="/Storage/pdf/kvkk-tr.pdf" class="dropdown-item" target="_blank">Kişisel Verilerin
+                          Korunması</a>
+                        <a href="/Storage/pdf/aydinlatma-tr.pdf" class="dropdown-item" target="_blank">Aydınlatma
+                          Metni</a>
+                        <a href="/Storage/pdf/basvuru-form-tr.pdf" class="dropdown-item" target="_blank">Veri Sahibi
+                          Başvuru Formu</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <a href="https://pay.akkahotels.com/" class="footer__menu-link">
+                      <i>AKKA <b>PAY</b></i>
+                    </a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a href=" privacyPolicyLink" class="footer__menu-link">
+                      Gizlilik Sözleşmesi
+                    </a>
+                  </li>
+
+                  <li class="footer__menu-item">
+                    <a href=" cancellationPolicyLink" class="footer__menu-link">
+                      İptal Sözleşmesi
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href=" onlineAcommodationFormLink" class="footer__menu-link">
+                      Online Konaklama Formu
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href=" specialPagesLink" class="footer__menu-link">
+                      Özel Sayfalar
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <div class="form-row">
+                      <div class="col-auto">
+                        <img class="img-fluid footer-logos"
+                          src="https://cdn.akkahotels.com/Storage/svg/wifi-colored.svg"
+                          alt="Yüksek Hızda, Güvenilir ve Sınırsız İnternet"
+                          title="Yüksek Hızda, Güvenilir ve Sınırsız İnternet" />
+                      </div>
+                      <div class="col-auto">
+                        <img class="img-fluid footer-logos"
+                          src="https://cdn.akkahotels.com/Storage/svg/akka-pay-icon.svg" alt="akkaPayText"
+                          title="akkaPayText" />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-between mt-4">
+      <div class="col-12">
+        <p class="footer__copyright text-white text-md-center">
+          © Copyright 2019 - Akka Hotels
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
 </html>
